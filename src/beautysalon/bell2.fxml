@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EFEAE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="beautysalon.Bell2Controller">
+   <children>
+      <TextArea fx:id="txt1" layoutX="21.0" layoutY="70.0" onMouseDragReleased="#ViewReceipt" prefHeight="259.0" prefWidth="287.0" />
+      <Label layoutX="101.0" layoutY="44.0" text="Customer information:">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt2" layoutX="340.0" layoutY="70.0" prefHeight="259.0" prefWidth="107.0" />
+      <Label layoutX="378.0" layoutY="44.0" text="Price:">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="127.0" layoutX="459.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo5.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

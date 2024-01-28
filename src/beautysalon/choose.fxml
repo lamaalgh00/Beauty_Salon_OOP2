@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="beautysalon.ChooseController">
+   <children>
+      <ImageView fx:id="image1" fitHeight="406.0" fitWidth="623.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo3.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label2111" layoutX="220.0" layoutY="246.0" text="Please choose one item from the menu :">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button11" layoutX="66.0" layoutY="358.0" mnemonicParsing="false" onAction="#select" text="Next" />
+      <RadioButton fx:id="rad31" layoutX="226.0" layoutY="334.0" mnemonicParsing="false" text="Choose services and show receipt">
+         <toggleGroup>
+            <ToggleGroup fx:id="menu" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rad11" layoutX="226.0" layoutY="272.0" mnemonicParsing="false" selected="true" text="Enter your information" toggleGroup="$menu" />
+      <RadioButton fx:id="rad21" layoutX="226.0" layoutY="304.0" mnemonicParsing="false" text="Show services and prices" toggleGroup="$menu" />
+   </children>
+</AnchorPane>
